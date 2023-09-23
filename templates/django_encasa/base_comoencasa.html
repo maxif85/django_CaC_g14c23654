@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{% block titulo %} {% endblock titulo %}</title>
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/IconoFavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/IconoFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/IconoFavicon/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2a437e5022.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width"/>
+</head>
+
+    <body>
+        <!--────────────────navbar menu───────────────-->
+        <header>
+            <a class="logo" href="./index.html">
+            <img src="./img/comoEnCasa.png" alt="fernet logo" />
+            </a>
+            <nav>	
+                <ul class="nav-bar">
+                    <li><a class="nav-link" href="{% url 'index' %}">Inicio</a></li>
+                    <li><a class="nav-link" href="{% url 'menu' %}">Menú</a></li>
+                    {% comment %} <li><a class="nav-link" href="sucuarsales.html">Sucursales</a></li> {% endcomment %}
+                    <li><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>            
+            {% block contenido_principal %}
+
+
+            {% endblock contenido_principal %}
+        </main>
+
+        <footer class="footer">
+        </footer>
+	
+        {% comment %} <script src="js/HederYfooter.js"></script> {% endcomment %}
+        <script src="js/script.js"></script>
+    </body>  
+</html>

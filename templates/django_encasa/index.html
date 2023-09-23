@@ -1,0 +1,75 @@
+{% extends "django_encasa/base_comoencasa.html" %}
+{% block titulo %} Index {% endblock titulo %}
+
+{% comment %} <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Como en Casa - Inicio</title>
+    <link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/IconoFavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/IconoFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/IconoFavicon/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  
+    <body> 
+    <div>
+	<!--────────────────navbar menu───────────────-->
+	<header></header> {% endcomment %}
+
+	<main>
+	<!--─────────────────encabezado - inicio────────────────-->
+	{% block contenido_principal %}
+	
+	  <div id="inicio">
+		<div class="filtro"></div>
+		<div class="intro">
+		<h3>COMO</h3>
+		<h3>EN CASA</h3><hr>
+		</div> 
+	  </div>  
+		
+	  <!--────────────────texto - inicio──────────────-->
+	  <div class="elemento"> 
+		 <h3>Sobre nosotros<hr></h3>
+      	 <h4>Conócenos con mas detalle...</h4>
+		  <div>
+			<div class="caja">	
+			<p>¡Bienvenido a "Como en Casa"! Somos una apasionada empresa de venta de comida que busca llevar a tu hogar la deliciosa experiencia de disfrutar de platos caseros y auténticos sabores. Nuestro objetivo es ofrecerte una alternativa práctica y sabrosa para que puedas deleitarte con comidas preparadas con amor y cuidado, tal como si las hubieras cocinado tú mismo.</p> <br>
+			<p>En "Como en Casa", nos enorgullece ofrecerte una amplia variedad de opciones culinarias, desde clásicos platillos tradicionales hasta innovadoras creaciones gastronómicas, siempre utilizando ingredientes frescos y de alta calidad. Nos esforzamos por garantizar que cada bocado que disfrutes refleje nuestra dedicación por brindarte una experiencia culinaria excepcional.
+			</p> <br>
+			<p>Ya sea que estés buscando una cena rápida para toda la familia, un almuerzo reconfortante o simplemente quieras probar algo nuevo y emocionante, "Como en Casa" es tu destino gastronómico ideal. Estamos comprometidos en superar tus expectativas y asegurarnos de que te sientas como en casa con cada pedido. Ven y descubre cómo podemos hacer que tu experiencia culinaria sea verdaderamente inolvidable.
+			</p>
+			</div>
+		  </div>
+	  </div>
+
+	  <!--──────────────contacto y footer────────────────-->
+	  	<!-- <div id="contacto">
+		   <h3>Contactate<hr></h3>
+		   <h4>Hace cualquier tipo de consulta</h4>
+		    <div class="red-social">
+			  <a href="" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+         	  <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+		    </div>
+		</div> -->
+		
+		<script src="https://kit.fontawesome.com/2a437e5022.js" crossorigin="anonymous"></script>
+	{% endblock contenido_principal %}	
+	</main>
+
+
+	<footer class="footer">
+    </footer>
+	
+	<script src="js/HederYfooter.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
